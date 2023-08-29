@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+     
+    <h1>Sentiment A</h1>
+    <form action="/" method="POST">
+        <label for="comment">Enter your comment:</label><br>
+        <textarea id="comment" name="Comment" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+    <h4 align="center"><b>{{result}}</b></h4>
+    {% endif %}
+</body>
+</html>
+
